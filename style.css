@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Megrim|Poiret+One');
 :root{
   --main: #02b3e4;
   --lighter: #fff;
@@ -5,10 +6,26 @@
   --dark: #7d97ad;
 }
 
-body{
-  padding: 20px;
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Poiret One', sans;
+  font-weight: 300;
 }
 
+body{
+  padding: 20px;
+  font-family: 'Poiret One', sans;
+  font-size: 20px;
+}
+
+h1{
+  text-transform: uppercase;
+}
+#site-name{
+  text-align: right;
+}
+#site-name h1{
+  font-size: 2.5em;
+}
 body>header section{
   padding: 40px 0;
 }
@@ -21,7 +38,6 @@ body>header section{
 }
 figure{
   width: 100%;
-  height: 100%;
   margin-block-start: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
@@ -30,3 +46,18 @@ figure{
 figure img{
   object-fit: cover;
 }
+section.projects,
+section.findme{
+  display: flex;
+  justify-content: space-between;
+}
+section.findme article,
+section.projects article{
+  flex-basis: 33%;
+}
+
+section article figure{
+  background: var(--dark);
+  min-height: 200px;
+}
+
