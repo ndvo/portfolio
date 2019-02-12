@@ -5,6 +5,28 @@
   --dark: #7d97ad;
 }
 
-body>header{
-  border-bottom: 
+body{
+  padding: 20px;
+}
+
+body>header section{
+  padding: 40px 0;
+}
+#site-name{
+  border-bottom: solid var(--dark);
+}
+#banner{
+  height: 30vh;
+  overflow: hidden;
+}
+figure{
+  width: 100%;
+  height: 100%;
+  margin-block-start: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-end: 0;
+}
+figure img{
+  object-fit: cover;
 }
