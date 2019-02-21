@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Megrim|Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100|Megrim|Poiret+One');
 :root{
   --main: #02b3e4;
   --lighter: #fff;
@@ -12,9 +12,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 body{
-  padding: 20px;
-  font-family: 'Poiret One', sans;
+  font-family: 'Alegreya Sans', sans;
   font-size: 20px;
+  padding: 20px;
 }
 
 h1{
@@ -26,6 +26,12 @@ h1{
 #site-name h1{
   font-size: 2.5em;
 }
+
+body{
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
 body>header section{
   padding: 40px 0;
 }
@@ -37,27 +43,34 @@ body>header section{
   overflow: hidden;
 }
 figure{
-  width: 100%;
-  margin-block-start: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
   margin-block-end: 0;
+  margin-block-start: 0;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+  width: 100%;
 }
 figure img{
+  height: 100%;
   object-fit: cover;
+  width: 100%;
 }
+
 section.projects,
 section.findme{
   display: flex;
+  flex-wrap:wrap;
   justify-content: space-between;
 }
 section.findme article,
 section.projects article{
   flex-basis: 33%;
 }
-
+main header{
+  flex: 0 0 100%;
+  width: 100%;
+}
 section article figure{
   background: var(--dark);
-  min-height: 200px;
+  height: 200px;
 }
 
