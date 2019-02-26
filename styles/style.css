@@ -6,7 +6,6 @@
   --dark: #7d97ad;
 }
 
-/** Body **/
 
 h1,h2,h3,h4,h5,h6{
   font-family: 'Poiret One', sans;
@@ -18,10 +17,6 @@ body{
   font-size: 20px;
   padding: 20px;
 }
-/** Header **/
-/** Footer **/
-
-
 
 h1{
   text-transform: uppercase;
